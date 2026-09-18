@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100v; 
+    height: 100vh; 
 }
 
 header{
@@ -103,6 +103,134 @@ button:hover{
     font-size: 25px;
     font-weight: 600;
     text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-desc {
+    margin: 8px 0;
+    font-size: 16px;
+    opacity: 0.9;
+    color: #808080;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #0077b5;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.linkedin-btn:hover {
+    background-color: #005f91;
+}
+
+.contact-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.contact-btns .linkedin-btn {
+    margin-top: 0;
+}
+
+.contact-btns a:nth-child(1) {
+    background-color: #25d366;
+}
+
+.contact-btns a:nth-child(1):hover {
+    background-color: #1da851;
+}
+
+.contact-btns a:nth-child(2) {
+    background-color: #ea4335;
+}
+
+.contact-btns a:nth-child(2):hover {
+    background-color: #c5221f;
+}
+
+@media (max-width: 768px){
+    header h1{
+        font-size: 40px;
+    }
+
+    header p{
+        font-size: 16px;
+    }
+
+    .box_inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .box_inputs input{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    button{
+        margin-top: 10px;
+        transform: translateY(0px);
+    }
+
+    #result{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #result div h1{
+        font-size: 30px;
+    }
+
+    #result div p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    header h1{
+        font-size: 30px;
+    }
+
+    header p{
+        font-size: 14px;
+    }
+
+    .box_inputs input{
+        font-size: 18px;
+    }
+
+    #result{
+        grid-template-columns: 1fr;
+    }
+
+    #result div h1{
+        font-size: 25px;
+    }
 }
 
 
